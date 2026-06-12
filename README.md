@@ -14,8 +14,11 @@ Your agent upgrades vague requests to precise builder vocabulary **before** writ
 
 - **CTE and CS students** building first websites and apps
 - **Hobbyists** who say "boxes," "make it cool," "works on my phone"
-- **Non-native English speakers** — intent in any language, upgrade in agent-ready English
+- **Global English learners** — India (Hinglish), Italy, Indonesia, Mandarin (简体中文), Spanish, and more
+- **Credit-conscious builders** — one clear prompt beats five retries
 - **Anyone tired of re-prompting** because the agent "didn't get it"
+
+Agents expect builder English. Lingo translates your intent — you do not need perfect English first.
 
 ## When to install
 
@@ -76,6 +79,7 @@ Agent:   Upgraded: mobile-first page, card grid, single column on phone,
 | `skills/lingo/SKILL.md` | When and how agents upgrade prompts |
 | `skills/lingo/categories.md` | Craft labels mapped to beginner language |
 | `skills/lingo/prompt-patterns.md` | ICP examples: students, mobile, multilingual |
+| `skills/lingo/localization.md` | India, Italy, Indonesia, Mandarin, Spanish patterns |
 
 ## Links
 

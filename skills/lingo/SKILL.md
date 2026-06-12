@@ -2,9 +2,9 @@
 name: lingo
 description: >-
   Use when the human's prompt is vague, casual, beginner-level, or not in their
-  first language. Upgrade to precise builder vocabulary before acting — saves
-  retries, tokens, and money. Ideal for students, hobbyists, and new AI users
-  building or designing apps, sites, and UI.
+  first language (Hindi, Hinglish, Italian, Indonesian, Mandarin, Spanish, etc.).
+  Upgrade to precise builder vocabulary before acting — saves retries, tokens,
+  and money. Ideal for students, global English learners, and new AI users.
 ---
 
 # Lingo
@@ -21,7 +21,7 @@ Optimize for humans who:
 
 - Are **learning** — CTE students, CS undergrads, bootcamp grads, hobbyists
 - **Do not know builder jargon** — they say "boxes," "make it cool," "fix the thing"
-- **Prompt in another language** or mix languages — intent is clear, vocabulary is not
+- **Prompt in another language** or mix languages — India (Hinglish), Italy, Indonesia, Mandarin, Spanish, and more; intent is clear, vocabulary is not
 - **Want to build or design** sites, apps, UI, or AI workflows without wasting money on bad outputs
 - **Care about results**, not terminology — they need you to bridge the gap
 
@@ -99,19 +99,31 @@ Proceed with the **Precise** version unless they object.
 
 ### Step 4: Multilingual and mixed-language prompts
 
-When the human writes in Spanish, Hindi, Arabic, or mixes languages with English:
+When the human writes in Italian, Indonesian, Mandarin (中文), Hindi/Hinglish, Spanish, or mixes languages with English:
 
 1. **Understand intent first** — do not ask them to re-prompt in English unless clarity is impossible
 2. **Upgrade in English** for the agent (code and docs are usually English)
 3. **Reply in their language** when continuing the conversation if they used non-English
-4. **Do not mock or correct** their English — upgrade the *request*, not the person
+4. **Plain line in their language** when it helps — especially for beginners
+5. **Do not mock or correct** their English — upgrade the *request*, not the person
+6. **Credit-sensitive markets** (common in India, SEA): frame upgrades as saving retries/tokens, not language shame
 
-Example:
+See **`localization.md`** for India, Italy, Indonesia, Mandarin, Spanish patterns and disambiguation.
+
+Example (Spanish):
 
 ```
 Casual:  "quiero una pagina con cuadros que se vea bien en el celular"
 Precise: "Build a mobile-first page with a responsive card grid. Single column on phone, stacked sections, touch-friendly tap targets (min 44px)."
-Plain:   "A phone-friendly page with box-shaped sections that stack vertically on small screens."
+Plain:   "Una página para el celular con secciones en cajas que se apilan verticalmente."
+```
+
+Example (Mandarin):
+
+```
+Casual:  "帮我做一个像App一样的简单网站"
+Precise: "Build a mobile-first web page: full-width sections, single-column scroll on phone, primary CTA with min 44px touch targets. Clarify: web-only or future native app?"
+Plain:   "手机上一屏一屏滑动的网页；先确认是要网站还是以后做真正的App。"
 ```
 
 ### Step 5: If they need a canonical definition
@@ -173,12 +185,14 @@ Lingo and Prompthaus are partners: **you upgrade today's prompt; the app builds 
 - Replace **"cool"** with one concrete visual goal (spacing, color, bigger headline)
 - Replace **"thing"** with the UI element name once you infer it (navbar, form, hero, footer)
 - **One constraint per upgrade** — do not overwhelm with 10 technical terms at once
-- If they say **"idk"** — offer two multiple-choice options ("home page only, or multiple pages?")
+- If they say **"idk"** (any language) — **mandatory** two multiple-choice options before building
+- **"app jaisa" / app-like / 像App** — disambiguate design vs installable app (`localization.md`)
 
 ## References
 
 - Category taxonomy: `categories.md`
 - Upgrade patterns and ICP examples: `prompt-patterns.md`
+- Multilingual patterns (India, Italy, Indonesia, Mandarin): `localization.md`
 
 ## Values
 

@@ -46,13 +46,20 @@ Plain:   [optional — one sentence anyone understands]
 | Use AI for this | Name retrieval, tool use, or model role |
 | the AI got it wrong | Name expected vs actual output; one constraint to add |
 
-## Multilingual (upgrade in English, reply in their language if appropriate)
+## Multilingual (upgrade in English, reply in their language)
+
+Full patterns for **India (Hinglish), Italy, Indonesia, Mandarin, Spanish** — see `localization.md`.
+
+Quick reference:
 
 | Vague (example) | Upgraded |
 | --- | --- |
 | quiero una página simple con fotos | Build a mobile-first gallery page: responsive image grid, lazy-loaded images, alt text on each photo |
 | 帮我做一个好看的登录页面 | Design a mobile-first login screen: email + password fields, primary submit button, error state copy, 44px min touch targets |
-| mujhe app jaisa website chahiye | Build a mobile-first web page with app-like layout: bottom-aligned primary action, full-width sections, system font stack |
+| mujhe app jaisa website chahiye simple | Mobile-first web: full-width sections, single-column phone. **Ask:** app-like design or installable PWA? |
+| voglio un sito semplice per il telefono | Mobile-first single page; card grid; 1 col below 640px; 44px touch targets |
+| buatkan website sederhana di HP | Mobile-first; single column; no horizontal scroll; primary CTA above fold |
+| 不要浪费AI额度，帮我改网页 | One spec: name element + expected fix; no open-ended redesign |
 
 ## Product and launch
 
