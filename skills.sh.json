@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Lingo",
+      "description": "Upgrade vague or multilingual prompts to precise builder vocabulary before your agent writes code. Built for students, global English learners, and credit-conscious builders.",
+      "skills": ["lingo"]
+    }
+  ]
+}
