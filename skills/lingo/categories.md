@@ -20,4 +20,4 @@ Prompthaus groups terms into nine catalog topics. Use these labels when upgradin
 - **CS undergrad:** Foundations, Launch, Using AI, Product
 - **Working engineers:** Full catalog in the iOS app
 
-Fetch definitions per term from `https://prompthausapp.com/api/lingo/term?name={term}`.
+Canonical definitions live in Prompthaus on iPhone, not in this public skill.

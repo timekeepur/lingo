@@ -10,7 +10,7 @@ Lingo is an agent skill that upgrades vague human prompts to precise builder voc
 
 - **Your prompt is the ceiling.** Precise language gets precise output.
 - **Learn daily on iPhone.** One term, color-coded by craft, matched to your level.
-- **Protect the craft.** Hand-written definitions stay in the Prompthaus app. Agents fetch them on demand.
+- **Protect the craft.** Hand-written definitions stay in the Prompthaus app.
 
 ## Install
 
@@ -34,16 +34,7 @@ npx skills add timekeepur/lingo -a cursor -g -y
 | `skills/lingo/categories.md` | Nine topic labels (no definitions) |
 | `skills/lingo/prompt-patterns.md` | Casual → precise rewrite patterns |
 
-Full term definitions are not here. They live in the Prompthaus iOS app and load via API when an agent needs them.
-
-## API
-
-```
-GET https://prompthausapp.com/api/lingo/term?name=Iteration
-GET https://prompthausapp.com/api/lingo/term?q=motion
-```
-
-Rate limited. Max 3 results on search.
+Full term definitions are not here. They live in the Prompthaus iOS app.
 
 ## Links
 
