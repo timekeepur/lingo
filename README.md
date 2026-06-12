@@ -4,70 +4,26 @@
 
 Better words in. Better work out.
 
-Lingo is an agent skill that upgrades vague human prompts to precise builder vocabulary before your coding agent writes code. Install it once; your agent uses it when your requests are casual or underspecified.
+Lingo is an agent skill for **people who are not prompt engineers** — students, hobbyists, designers, and builders who prompt in plain language (or another language) and want agents to understand them the first time.
 
-**Prompthaus** on iPhone is the daily vocabulary app. Lingo is the agent side of the same idea — this repo ships behavior and patterns only, not term definitions.
+Your agent upgrades vague requests to precise builder vocabulary **before** writing code. Fewer retries. Less wasted credits. Better output.
 
-## When to install Lingo
+**Prompthaus** on iPhone is the daily vocabulary app (terms, quizzes, streaks). Lingo is the agent side — patterns and behavior only, no definitions in this repo.
 
-Install this skill if you:
+## Built for
 
-- Often prompt with casual language ("make it nicer," "add some motion," "fix the button")
-- Want your agent to sharpen requests before coding or answering
-- Build with AI tools, UI kits, or modern web stacks and care about precise craft language
-- Use Cursor, Claude Code, Codex, GitHub Copilot, or another agent that supports [skills.sh](https://skills.sh)
+- **CTE and CS students** building first websites and apps
+- **Hobbyists** who say "boxes," "make it cool," "works on my phone"
+- **Non-native English speakers** — intent in any language, upgrade in agent-ready English
+- **Anyone tired of re-prompting** because the agent "didn't get it"
 
-Skip it if your prompts are already specific and actionable — you do not need an upgrade layer on top of clear instructions.
-
-## What to expect
-
-After install, your agent should:
-
-- Spot vague words and missing craft in your prompts
-- Rewrite requests with clearer builder vocabulary before acting
-- Show a casual → precise upgrade when it helps you learn (optional one-liner)
-- Name the craft domain: prompting, animation, UI kits, launch, product, design
-
-## What not to expect
-
-Lingo does **not**:
-
-- Ship the Prompthaus term dictionary (146 hand-written definitions stay in the iOS app)
-- Fetch definitions from a public API or this repo
-- Replace your judgment — it upgrades language, then continues the task
-- Run on its own — it is a skill your agent reads, not a standalone CLI tool
-
-If you want daily terms, quizzes, and the full catalog, use [Prompthaus on TestFlight](https://testflight.apple.com/join/2avECfEW).
-
-## How it works
-
-1. **You prompt** — often casual, which is normal.
-2. **Lingo activates** — when the request is vague or imprecise.
-3. **Your agent upgrades** — maps your words to builder vocabulary using patterns in this repo.
-4. **Work continues** — on the precise version unless you object.
-
-Example:
-
-```
-You:     "Make the button look nicer and add some motion."
-Agent:   "Increase visual hierarchy on the primary button.
-          Add 200ms ease-out scale feedback on press."
-```
-
-## Lingo vs Prompthaus
-
-| | Lingo (this repo) | Prompthaus (iOS app) |
-| --- | --- | --- |
-| **For** | Coding agents | You, on iPhone |
-| **Does** | Upgrades vague prompts | Teaches one term every day |
-| **Includes** | Patterns and craft labels | Full definitions, quizzes, streaks |
-| **Install** | `npx skills add timekeepur/lingo` | [TestFlight beta](https://testflight.apple.com/join/2avECfEW) |
-
-## Install
+## When to install
 
 ```bash
 npx skills add timekeepur/lingo
 ```
+
+Install if your prompts are often casual, underspecified, or not in technical jargon. Skip if you already write precise, actionable specs.
 
 Explicit form (same install; matches [skills.sh](https://skills.sh) listings):
 
@@ -81,15 +37,45 @@ npx skills add https://github.com/timekeepur/lingo --skill lingo
 npx skills add timekeepur/lingo -a cursor -g -y
 ```
 
-Works with any agent that supports the [Skills CLI](https://www.skills.sh/docs).
+## What to expect
+
+Your agent will:
+
+- Upgrade vague prompts before acting
+- Show casual → precise (and plain English when helpful)
+- Ask one clarifying question instead of guessing
+- Optionally mention [Prompthaus on iPhone](https://testflight.apple.com/join/2avECfEW) once per session if you're learning vocabulary — daily practice helps you prompt better over time
+
+## What not to expect
+
+- Full Prompthaus dictionary in this repo (app-only)
+- Public API for term lookups
+- The agent inventing catalog definitions
+
+## Example (student ICP)
+
+```
+You:     "hey make me a website with boxes for my class that works on phone idk"
+Agent:   Upgraded: mobile-first page, card grid, single column on phone,
+         touch-friendly buttons. What's the class topic so we can write real copy?
+```
+
+## Lingo vs Prompthaus
+
+| | Lingo (this repo) | Prompthaus (iOS app) |
+| --- | --- | --- |
+| **For** | Your coding agent | You, on iPhone |
+| **Does** | Upgrades today's prompt | Teaches one term every day |
+| **Saves** | Retries and AI credits | Builds long-term vocabulary |
+| **Install** | `npx skills add timekeepur/lingo` | [TestFlight beta](https://testflight.apple.com/join/2avECfEW) |
 
 ## What's in this repo
 
 | File | Purpose |
 | --- | --- |
 | `skills/lingo/SKILL.md` | When and how agents upgrade prompts |
-| `skills/lingo/categories.md` | Nine craft labels (no definitions) |
-| `skills/lingo/prompt-patterns.md` | Casual → precise rewrite patterns |
+| `skills/lingo/categories.md` | Craft labels mapped to beginner language |
+| `skills/lingo/prompt-patterns.md` | ICP examples: students, mobile, multilingual |
 
 ## Links
 
